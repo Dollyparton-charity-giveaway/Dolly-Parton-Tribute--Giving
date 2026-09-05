@@ -121,3 +121,47 @@ footer a, footer p { display: block; font-size: 11px; line-height: 1.7; margin: 
   .cards { grid-template-columns: 1fr; }
   footer { grid-template-columns: 1fr; }
 }
+
+/* APPLICATION FORM STYLING & FIXES */
+.form-hero { padding: 140px 7% 40px; background: #06182d; color: #fff; }
+.form-section { padding: 40px 7% 90px; background: #0b2544; }
+.application-form { max-width: 780px; margin: auto; background: #06182d; padding: 40px; border-radius: 8px; border: 1px solid rgba(201, 163, 91, 0.3); color: #fff; }
+.application-form label { display: block; margin-bottom: 20px; font-size: 13px; font-weight: 600; color: #e0b86d; }
+
+.application-form select,
+.application-form input,
+.application-form textarea {
+  width: 100%;
+  border: 1px solid rgba(201, 163, 91, 0.4);
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin-top: 6px;
+  font-family: inherit;
+  font-size: 15px;
+  background: #0b2544;
+  color: #ffffff;
+}
+
+.application-form select option {
+  background-color: #06182d;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.dob-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 10px;
+}
+
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.form-head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 25px; border-bottom: 1px solid rgba(201,163,91,0.2); padding-bottom: 15px; }
+.required { font-size: 11px; color: #c9a35b; }
+.choice-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 10px; }
+.choice-grid label { background: #0b2544; padding: 15px; border-radius: 6px; border: 1px solid rgba(201,163,91,0.3); cursor: pointer; text-align: center; color: #fff; }
+.form-safety { text-align: center; font-size: 11px; color: #8a9bb0; margin-top: 20px; }
+
+@media(max-width:600px) {
+  .grid2, .choice-grid, .dob-grid { grid-template-columns: 1fr; }
+}
