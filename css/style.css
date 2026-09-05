@@ -1,11 +1,95 @@
-/* Hero Image & Layout Fixes */
+/* ==========================================
+   DESIGN SYSTEM & GLOBAL STYLES
+   ========================================== */
+:root {
+  --navy-dark: #0b132b;
+  --navy-card: #1c2541;
+  --gold-primary: #d4af37;
+  --gold-light: #f4e04d;
+  --text-light: #f8f9fa;
+  --text-muted: #a0aec0;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--navy-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, .brand-script {
+  font-family: 'Playfair Display', serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ==========================================
+   HEADER & NAVIGATION
+   ========================================== */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background: var(--navy-dark);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-script {
+  font-size: 1.8rem;
+  color: var(--gold-primary);
+}
+
+.brand-word {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.site-header nav a {
+  margin: 0 1rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.site-header nav a.active, 
+.site-header nav a:hover {
+  color: var(--gold-primary);
+}
+
+.header-mail {
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--gold-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--gold-primary);
+}
+
+/* ==========================================
+   HERO SECTION & IMAGE OVERLAY
+   ========================================== */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: #0b132b;
+  background-color: var(--navy-dark);
+  padding: 0 5%;
 }
 
 .hero-photo {
@@ -27,7 +111,88 @@
   z-index: 2;
 }
 
+/* ==========================================
+   FORMS & INPUTS
+   ========================================== */
+.form-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: var(--navy-card);
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-top: 0.4rem;
+  background: #0b132b;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 6px;
+  color: var(--white);
+  font-size: 1rem;
+}
+
+select option {
+  background: var(--navy-dark);
+  color: var(--white);
+}
+
+.btn-navy {
+  background: var(--gold-primary);
+  color: var(--navy-dark);
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.btn-navy:hover {
+  background: var(--gold-light);
+}
+
+/* ==========================================
+   FOOTER & RESPONSIVE DESIGN
+   ========================================== */
+footer {
+  background: #060a17;
+  padding: 3rem 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.copyright {
+  text-align: center;
+  padding: 1.5rem;
+  background: #040710;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
   .hero-photo {
     width: 100%;
     height: 50%;
