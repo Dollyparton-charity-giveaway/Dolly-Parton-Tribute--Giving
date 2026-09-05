@@ -1,1 +1,1 @@
-// Form handling is managed directly by Web3Forms
+// Form processing delegated directly to Web3Forms secure endpoint
